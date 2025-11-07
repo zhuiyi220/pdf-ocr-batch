@@ -1,0 +1,35 @@
+OCR识别优化参数说明
+===================
+
+已启用的优化选项：
+
+1. force_ocr=True
+   - 强制对所有页面进行OCR，即使已有文字层
+
+2. image_dpi=300
+   - 提高图像分辨率到300 DPI，提升识别精度
+
+3. rotate_pages=True
+   - 自动旋转页面到正确方向
+
+4. remove_background=True
+   - 移除背景噪点，提高文字清晰度
+
+5. clean=True
+   - 清理图像，去除干扰元素
+
+6. tesseract_oem=1
+   - 使用LSTM神经网络引擎（最新最准确）
+
+7. tesseract_pagesegmode=1
+   - 自动页面分割模式，适合复杂布局
+
+8. optimize=0
+   - 不压缩输出，保持最高质量
+
+9. tesseract_timeout=300
+   - 每页最多处理5分钟，适合复杂页面
+
+提示：
+- 处理时间会比之前更长，但识别率更高
+- 如果PDF质量很差，建议先用图像处理软件增强
